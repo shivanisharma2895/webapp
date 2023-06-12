@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+  background-color: rgba(225, 233, 225, 0.8);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1{
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header nav a{
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header nav a.active {
+  background: var(--primary);
 }
 
-.App-link {
-  color: #61dafb;
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home > h2 {
+  border-bottom: #2b3452;
+}
+
+.box {
+  border: 10px solid green;
+  background-color: aquamarine;
+  margin: 10px;
+  padding: 15px
+}
+
+
+.help-layout nav .faq{
+  background: #2b3452;
+
+}
+
+.home h2{
+  width:20%;
+  border-bottom:  solid black;
+}
+
+.home >.box1{
+ margin: 10px;
+ padding: 5px;
+ border: 5px solid black;
+ background-color: aquamarine;
+}
+
+.about p {
+  margin : 10px;
+  padding: 5px;
+  border:5px solid black; 
+  background-color: aquamarine;
 }
